@@ -24,7 +24,7 @@ export default function AmzReview(){
     const HandleAmzSubmit = () => {
         setLoading(false);
         async function getData() {
-            const res = await fetch(`https://review-api10.herokuapp.com/get-amz-results?item=${amzInputs}`)
+            const res = await fetch(`https://review-api-6jdz.onrender.com/get-amz-results?item=${amzInputs}`)
             const data = await res.json()
             setamzReviewData(data);
             console.log(data);
@@ -40,7 +40,7 @@ export default function AmzReview(){
     const HandleFlipSubmit = () => {
         setLoading(false);
         async function getData() {
-            const res = await fetch(`https://review-api10.herokuapp.com/get-flp-results?item=${flipInputs}`)
+            const res = await fetch(`https://review-api-6jdz.onrender.com/get-flp-results?item=${flipInputs}`)
             const data = await res.json()
             setflipReviewData(data);
             console.log(data);
